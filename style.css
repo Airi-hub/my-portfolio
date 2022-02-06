@@ -1,0 +1,274 @@
+
+
+
+ /* header */
+header {
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', 'Helvetica Neue', Arial, sans-serif;
+    padding-left: 15px;
+    height: 60px;
+    width: 100%;
+    background-color :rgba(34, 49, 52, 0.9);
+    position: fixed; 
+    top: 0px;
+    z-index: 10;
+    color: white;
+    display: flex;
+    align-items: center;
+   }
+   body {
+    font-family:"Courier";
+}
+
+
+  
+   li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  
+  .header-container {
+    width: 80%;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #headercontainer-list {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .headercontainer-list-item:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+
+  
+
+  /* home */
+  #home {
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background: url("./images/homebg.png") center bottom / cover no-repeat;
+  }
+  
+  .home-opacity {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(218, 78, 183, 0.5);
+  }
+  
+  .home-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #home-discription {
+    padding-top: 10rem;
+    width: max-content;
+    transition: 3s;
+    transform: translateY(-4rem) rotateY(360deg);
+    
+  }
+
+  .home-discription-name{
+    width-top:600px;
+    color: rgba(244, 248, 248, 0.6);
+    font-size:200px;
+    width: 100%;
+    font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', 'Helvetica Neue', Arial, sans-serif;
+    
+}
+  .portfolio2{
+    text-decoration: underline;
+    text-decoration-color:#c42597;
+    color:#c42597;
+    font-size: 40px;
+
+} @media screen and (max-width: 500px) {
+    .home-container {
+      width: 90%;
+    }
+  }
+
+  .design2 {
+  font-size: 30px;
+  }
+  
+ /* profile */
+      .profile-container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 5rem 0 0;
+        margin-bottom: 6rem;
+      }
+      
+      .profile-title {
+        font-size: 3.5em;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 72x;
+        margin-bottom: 30px;
+      }
+      
+      .profile-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .profile-q-a {
+        width: 30%;
+        margin-top: 4rem;
+      }
+      
+      .profile-q {
+        border-bottom: 0.1rem solid rgb(112, 1, 1);
+        font-size: 2em;
+        margin-bottom: 1.5rem;
+        width: 90%;
+      }
+      
+      .profile-a{
+        font-size: 3em;
+        width: 90%;
+        font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', 'Helvetica Neue', Arial, sans-serif;
+      }
+      
+    
+  
+  /* Favorite */
+
+
+.Fortune-telling-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-top: 72x;
+    margin-bottom: 2px;
+}
+
+.favorite-wrapper{
+ background-color: rgba(218, 78, 183, 0.5);
+}
+.profile-hobby {
+    display: flex;
+}
+
+.favorite2 {
+    width: 20%;
+}
+
+.favorite-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.favorite-icon img {
+    width: 100%;
+}
+
+.profile-favorite {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite-space {
+    display: flex;/
+    align-items: center;
+    justify-content: center; 
+}
+
+.favorite-icon p {
+    position: absolute;
+    font-size: 20px;
+}
+
+.favorite-icon:hover {
+    transform: scale(1.25);  
+}
+
+.txt-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.spacer {
+    height: 72px;
+}
+
+/*fortune-telling*/
+.Fortune-telling-container2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 2px; 
+}
+
+.fortune3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color:#c42597;
+}
+
+.fortune3 input{
+ background-color: azure;
+}
+
+
+.fortune4{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color:blueviolet
+}
+
+.Fortune-telling-container3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px; 
+    font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', 'Helvetica Neue', Arial, sans-serif;
+}
