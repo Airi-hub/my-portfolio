@@ -61,100 +61,123 @@ header {
 
   
 
+  
+  
   /* home */
-  #home {
-    color: white;
-    height: 100vh;
-    width: 100%;
-    background: url("./images/homebg.png") center bottom / cover no-repeat;
-  }
-  
-  .home-opacity {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(218, 78, 183, 0.5);
-  }
-  
-  .home-container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  #home-discription {
-    padding-top: 10rem;
-    width: max-content;
-    transition: 3s;
-    transform: translateY(-4rem) rotateY(360deg);
-    
-  }
-
-  .home-discription-name{
-    width-top:600px;
-    color: rgba(244, 248, 248, 0.6);
-    font-size:200px;
-    width: 100%;
-    font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', 'Helvetica Neue', Arial, sans-serif;
-    
+ /* home */
+ #home {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background: url("./images/homebg.png") center bottom / cover no-repeat;
 }
-  .portfolio2{
-    text-decoration: underline;
-    text-decoration-color:#c42597;
-    color:#c42597;
-    font-size: 40px;
 
-} @media screen and (max-width: 500px) {
-    .home-container {
-      width: 90%;
-    }
-  }
+.home-opacity {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(218, 78, 183, 0.5);
+}
 
-  .design2 {
-  font-size: 30px;
-  }
+.home-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#home-discription {
+  padding-top: 10rem;
+  padding-left: 2rem;
+  width: max-content;
+  transition: 3s;
+  transform: translateY(-4rem) rotateY(360deg);
   
- /* profile */
-      .profile-container {
+}
+
+.home-discription-name{
+  width-top:600px;
+  color: rgba(244, 248, 248, 0.6);
+  font-size:200px;
+  width: 100%;
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', 'Helvetica Neue', Arial, sans-serif;
+}
+.portfolio2{
+  text-decoration: underline;
+  text-decoration-color:#c42597;
+  color:#c42597;
+  font-size: 40px;
+
+}
+ 
+      
+      修正
+
+      .aboutme-container {
         width: 80%;
         margin: 0 auto;
         padding: 5rem 0 0;
-        margin-bottom: 6rem;
+        margin-bottom: 10rem;
+        margin-left: 1rem;
       }
       
-      .profile-title {
+      .aboutme__title {
         font-size: 3.5em;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 72x;
+        margin-top: 78px;
         margin-bottom: 30px;
       }
       
-      .profile-details {
+      .aboutme__details {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
       }
       
-      .profile-q-a {
+      .aboutme__q-and-a {
         width: 30%;
         margin-top: 4rem;
       }
       
-      .profile-q {
-        border-bottom: 0.1rem solid rgb(112, 1, 1);
+      .aboutme__question {
+        border-bottom: 0.03rem solid rgb(112, 1, 1);
         font-size: 2em;
         margin-bottom: 1.5rem;
         width: 90%;
+        margin-left: 1.7rem;
       }
       
-      .profile-a{
+      .aboutme__answer {
         font-size: 3em;
+        opacity: 0;
+        transform: translateX(5rem);
+        transition: all 1.5s;
         width: 90%;
         font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', 'Helvetica Neue', Arial, sans-serif;
+        margin-bottom:2rem;
+        margin-left: 1.7rem;
+      }
+       
+        
+      .aboutme__answer.seen {
+        opacity: 1;
+        height: max-content;
+        width: 90%;
+        transform: translateX(0);
       }
       
-    
+     
+      @media screen and (max-width: 950px) {
+        .aboutme__q-and-a {
+          width: 45%;
+        }
+        .aboutme__answer__country {
+          width: 45%;
+        }
+        .aboutme__answer__country.open {
+          width: 45%;
+        }
+      }
   
   /* Favorite */
 
@@ -272,3 +295,32 @@ header {
     margin-bottom: 2px; 
     font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', 'Helvetica Neue', Arial, sans-serif;
 }
+
+.omikuji{
+     border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(236, 65, 194, 0.986);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+  
+.footer-discription {
+  color: white;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

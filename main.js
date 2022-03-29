@@ -1,4 +1,33 @@
+// // titleの回転
 
+const homeDiscription = document.getElementById("home-discription-name");
+
+const addFadein = function () {
+  homeDiscription.classList.add("fadein");
+};
+window.onload = function () {
+  // 一度だけ処理を実行
+  setTimeout(addFadein, 2000);
+};
+
+// // aboutmeのフェードイン
+
+const aboutMeQuestions = document.querySelectorAll(".aboutme__question");
+
+// questionに接しているanswerを出現させる関数
+const drawAnswer = function (order) {
+  aboutMeQuestions[order].onmouseover = function () {
+    const aboutMeAnswer = aboutMeQuestions[order].nextElementSibling; // HTMLで見て次の要素を取ってくる
+    aboutMeAnswer.classList.add("seen"); // 見えるようにする
+  };
+};
+
+// questionがある個数分だけイベントを作る
+for (let i = 0; i < aboutMeQuestions.length; i++) {
+  drawAnswer(i);
+}
+
+//占い//
 
 
 const fortune2 =document.getElementById("fortune");
